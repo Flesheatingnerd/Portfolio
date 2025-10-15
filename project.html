@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects_Database.sys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="terminal">
+    <div class="overseer">
+      <h1>------ PROJECTS DATABASE ------</h1>
+      <a href="https://github.com/Flesheatingnerd">File Origin: /user_data/projects/sys_log</a>
+    </div>
+
+    <blockquote class="text">
+      <p><strong>ACCESS LOG:</strong> Authorized user [User]</p>
+      <p><strong>Status:</strong> Portfolio modules online.</p>
+      <p><strong>Directive:</strong> Display all active and archived creations.</p>
+      <br>
+
+      <p><strong>Overseer:</strong> Initiating scan...</p>
+      <p><strong>System:</strong> Found 4 records in current directory.</p>
+      <br>
+
+      <ul id="projects-list">
+        <li>
+          <p><strong>PROJECT_001: Terminal Portfolio [Active]</strong></p>
+          <p>Description: The very system you're reading this from. A fusion of code and aesthetic, built with HTML, CSS, and JavaScript. Simulates a secure digital terminal while serving as a personal website.</p>
+          <p>Stack: HTML | CSS | JavaScript</p>
+          <p>Status: Deployed</p>
+        </li>
+        <br>
+
+        <li>
+          <p><strong>PROJECT_002: Tales at Skittles' Inn [In Development]</strong></p>
+          <p>Description: A multi-genre story hub — cozy, eerie, and strange. Built to host fiction, artwork, and logs from different worlds, all connected under a single site framework.</p>
+          <p>Stack: HTML | CSS | JavaScript (planned: React integration)</p>
+          <p>Status: Under Construction</p>
+        </li>
+        <br>
+
+        <li>
+          <p><strong>PROJECT_003: KusinaSeekr [Ongoing]</strong></p>
+          <p>Description: A web-based Filipino recipe and learning platform aimed at promoting home cooking and culinary education. Created for an academic capstone project.</p>
+          <p>Stack: HTML | PHP | MySQL</p>
+          <p>Status: <a href="https://github.com/adeptme/KusinaSeekr-Frontend"><span class="status">Archived</span></a></p>
+        </li>
+        <br>
+
+         <li>
+          <p><strong>PROJECT_004: Skittles Bot [Active]</strong></p>
+          <p>Description: A Discord Bot responds to commands, posts fun prompts, and integrates small mini-games. Designed to be Flesh's small dive into Machine Learning.</p>
+          <p>Stack: Python | Discord API</p>
+          <p>Highlights:
+            <ul>
+              <li>Custom commands</li>
+              <li>Play simple mini-games</li>
+              <li>Role-playing features (Future Updates)</li>
+            </ul>
+          </p>
+          <p>Status: <a href="https://github.com/Flesheatingnerd/Skittles-Companion"><span class="status online">Active</span></a></p>
+        </li>
+      </ul>
+
+      <br>
+      <p><strong>Overseer:</strong> Log complete. Awaiting new entries...</p>
+      <br>
+
+      <p><strong>[END OF FILE]</strong></p>
+    </blockquote>
+
+    <div class="scanline"></div>
+
+    <div class="selection">
+      <a href="index.html">[Back]</a>
+      <a href="contact.html">[Next File]</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© | PROJECTS_DATABASE v1.0</p>
+  </footer>
+
+    <script>
+    // Simple "reveal" animation for projects (non-blocking)
+    document.addEventListener("DOMContentLoaded", () => {
+      const items = document.querySelectorAll("#projects-list li");
+      items.forEach((li, i) => {
+        li.style.opacity = 0;
+        li.style.transform = "translateY(6px)";
+        setTimeout(() => {
+          li.style.transition = "opacity 400ms ease, transform 400ms ease";
+          li.style.opacity = 1;
+          li.style.transform = "translateY(0)";
+        }, 600 + i * 220); // staggered reveal
+      });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT_PROTOCOL.sys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="terminal">
+    <div class="overseer">
+      <h1>---- CONTACT_PROTOCOL.sys ----</h1>
+      <p>Initializing secure uplink...</p>
+      <p>Connection: <strong>Stable</strong></p>
+      <p>Encryption Level: AES-256 | Channel Open</p>
+      <br>
+    </div>
+
+    <blockquote class="text">
+      <p><strong>System AI:</strong> State your transmission, User.</p>
+      <p><strong>Overseer:</strong> You may send encrypted correspondence through the form below. I will forward it to your designated client.</p>
+
+      <form id="contact-form" class="contact-form">
+        <label for="name">> IDENTIFICATION</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">> RETURN CHANNEL</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">> TRANSMISSION DATA</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">[ SEND TRANSMISSION ]</button>
+      </form>
+
+      <div id="response"></div>
+
+      <br><br>
+
+      <p><strong>Overseer:</strong> Alternate communication routes available:</p>
+      <ul>
+        <li><a href="mailto:frankeliel.gasta@gmail.com">Encrypted Google Mail</a></li>
+        <li><a href="https://github.com/Flesheatingnerd" target="_blank">GitHub Network</a></li>
+        <li><a href="https://x.com/flesheatingnerd" target="_blank">X/Twitter Feed</a></li>
+      </ul>
+    </blockquote>
+
+    <div class="scanline"></div>
+    <br>
+
+    <div class="selection">
+      <a href="index.html">[Back]</a>
+      <a href="experience.html">[Next File]</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© | CONTACT_PROTOCOL v1.0</p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
