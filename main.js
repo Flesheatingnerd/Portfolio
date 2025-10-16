@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
       '<li><a href="aboutMe.html">Access File: ABOUT_ME.sys</a></li>' +
       '<li><a href="project.html">Access File: PROJECTS_DATABASE.sys</a></li>' +
       '<li><a href="contact.html">Access File: CONTACT_PROTOCOL.sys</a></li>' +
-      '<li><a href="#">Access File: EXPERIENCE_ARCHIVE.SYS</a></li>' +
+      '<li><a href="experience.html">Access File: EXPERIENCE_ARCHIVE.SYS</a></li>' +
     '</ul>'
   ];
 
@@ -32,4 +32,5 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   typeLine();
+
 });
