@@ -185,3 +185,15 @@ strong {
   color: #bfffc8;
   font-weight: bold;
 }
+
+section {
+  display: none;
+}
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
